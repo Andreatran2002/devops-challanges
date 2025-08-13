@@ -10,3 +10,6 @@ You are required to write a script server-stats.sh that can analyse basic server
 - Stretch goal: Feel free to optionally add more stats such as os version, uptime, load average, logged in users, failed login attempts etc.
 
 Source: https://roadmap.sh/projects/server-stats
+
+## Sources
+- https://www.geeksforgeeks.org/linux-unix/awk-command-unixlinux-examples/
