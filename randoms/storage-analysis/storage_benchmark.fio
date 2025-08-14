@@ -1,0 +1,35 @@
+[global]
+ioengine=libaio
+direct=1
+runtime=60
+time_based
+group_reporting
+numjobs=4
+iodepth=32
+filename=/dev/drbd1001 
+
+; ---- Random 4K Read Test ----
+[randread_4k]
+bs=4k
+rw=randread
+; ---- Random 4K Write Test ----
+[randwrite_4k]
+bs=4k
+rw=randwrite
+
+; ---- Sequential 1M Read Test ----
+[seqread_1m]
+bs=1m
+rw=read
+
+; ---- Sequential 1M Write Test ----
+[seqwrite_1m]
+bs=1m
+rw=write
+
+; ---- Mixed 4K 70% Read 30% Write ----
+[mixed_4k]
+bs=4k
+rw=randrw
+rwmixread=70
+
